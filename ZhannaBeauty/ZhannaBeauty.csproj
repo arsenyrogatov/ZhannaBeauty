@@ -49,12 +49,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClientMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientMainForm.Designer.cs">
+      <DependentUpon>ClientMainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClientRegistration.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ClientRegistration.Designer.cs">
       <DependentUpon>ClientRegistration.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClientServices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientServices.Designer.cs">
+      <DependentUpon>ClientServices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBProvider.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,8 +76,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="WorkerLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkerLogin.Designer.cs">
+      <DependentUpon>WorkerLogin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ClientMainForm.resx">
+      <DependentUpon>ClientMainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClientRegistration.resx">
       <DependentUpon>ClientRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientServices.resx">
+      <DependentUpon>ClientServices.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -79,6 +105,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="WorkerLogin.resx">
+      <DependentUpon>WorkerLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -95,6 +124,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="img\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Female User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\User Male.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
