@@ -1,6 +1,6 @@
 ﻿namespace ZhannaBeauty
 {
-    partial class ClientServices
+    partial class UserServices
     {
         /// <summary>
         /// Required designer variable.

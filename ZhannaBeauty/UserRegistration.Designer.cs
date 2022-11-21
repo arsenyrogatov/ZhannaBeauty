@@ -1,6 +1,6 @@
 ﻿namespace ZhannaBeauty
 {
-    partial class ClientRegistration
+    partial class UserRegistration
     {
         /// <summary>
         /// Required designer variable.

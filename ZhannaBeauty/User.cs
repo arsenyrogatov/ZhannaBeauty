@@ -61,6 +61,11 @@ namespace ZhannaBeauty
             DBProvider.Open();
             GetUserInfo.ExecuteNonQuery();
             DBProvider.Close();
+
+            FIO = GetUserInfo.Parameters["@FIO"].Value.ToString();
+            Birth = DateTime.Parse(GetUserInfo.Parameters["@Birth"].Value.ToString());
+            Gen = char.Parse(GetUserInfo.Parameters["@Gen"].Value.ToString());
+            Phone = int.Parse(GetUserInfo.Parameters["@Phone"].Value.ToString());
         }
 
         public DataTable GetUserServices ()

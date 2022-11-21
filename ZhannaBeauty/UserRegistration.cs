@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ZhannaBeauty
 {
-    public partial class ClientRegistration : Form
+    public partial class UserRegistration : Form
     {
-        public ClientRegistration()
+        public UserRegistration()
         {
             InitializeComponent();
             birth_dateTimePicker.MaxDate = DateTime.Now;

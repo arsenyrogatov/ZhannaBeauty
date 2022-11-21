@@ -1,6 +1,6 @@
 ﻿namespace ZhannaBeauty
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -33,11 +33,11 @@
             this.pwd_textBox = new System.Windows.Forms.TextBox();
             this.userLogin_button = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.username_textBox = new System.Windows.Forms.MaskedTextBox();
             this.regUser_linkLabel = new System.Windows.Forms.LinkLabel();
             this.label3 = new System.Windows.Forms.Label();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.username_textBox = new System.Windows.Forms.MaskedTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -69,6 +69,7 @@
             this.pwd_textBox.PasswordChar = '*';
             this.pwd_textBox.Size = new System.Drawing.Size(159, 25);
             this.pwd_textBox.TabIndex = 4;
+            this.pwd_textBox.Text = "пар";
             // 
             // userLogin_button
             // 
@@ -95,6 +96,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(254, 139);
             this.panel1.TabIndex = 6;
+            // 
+            // username_textBox
+            // 
+            this.username_textBox.Location = new System.Drawing.Point(48, 23);
+            this.username_textBox.Mask = "000000000";
+            this.username_textBox.Name = "username_textBox";
+            this.username_textBox.Size = new System.Drawing.Size(158, 25);
+            this.username_textBox.TabIndex = 6;
+            this.username_textBox.Text = "897726603";
             // 
             // regUser_linkLabel
             // 
@@ -144,15 +154,7 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // username_textBox
-            // 
-            this.username_textBox.Location = new System.Drawing.Point(48, 23);
-            this.username_textBox.Mask = "000000000";
-            this.username_textBox.Name = "username_textBox";
-            this.username_textBox.Size = new System.Drawing.Size(158, 25);
-            this.username_textBox.TabIndex = 6;
-            // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
@@ -167,7 +169,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Добро пожаловать!";
             this.panel1.ResumeLayout(false);

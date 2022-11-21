@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ZhannaBeauty
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
@@ -26,7 +26,7 @@ namespace ZhannaBeauty
                     MessageBox.Show("Неправильный логин или пароль!");
                 else
                 {
-                    ClientMainForm clientMainForm = new ClientMainForm();
+                    UserMainForm clientMainForm = new UserMainForm();
                     clientMainForm.InitializeUser(user);
                     clientMainForm.FormClosing += (object se, FormClosingEventArgs ee) => { this.Visible = true; };
                     this.Visible = false;
@@ -41,7 +41,7 @@ namespace ZhannaBeauty
 
         private void regUser_linkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            ClientRegistration clientRegistration = new ClientRegistration();
+            UserRegistration clientRegistration = new UserRegistration();
             clientRegistration.ShowDialog();
         }
     }
