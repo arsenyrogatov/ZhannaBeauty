@@ -49,11 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UserMainForm.cs">
+    <Compile Include="Rec.cs" />
+    <Compile Include="UserProcedure.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserMainForm.Designer.cs">
-      <DependentUpon>UserMainForm.cs</DependentUpon>
+    <Compile Include="UserProcedure.Designer.cs">
+      <DependentUpon>UserProcedure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserRec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserRec.Designer.cs">
+      <DependentUpon>UserRec.cs</DependentUpon>
     </Compile>
     <Compile Include="UserRegistration.cs">
       <SubType>Form</SubType>
@@ -61,18 +68,18 @@
     <Compile Include="UserRegistration.Designer.cs">
       <DependentUpon>UserRegistration.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserServices.cs">
+    <Compile Include="UserAddRec.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserServices.Designer.cs">
-      <DependentUpon>UserServices.cs</DependentUpon>
+    <Compile Include="UserAddRec.Designer.cs">
+      <DependentUpon>UserAddRec.cs</DependentUpon>
     </Compile>
     <Compile Include="DBProvider.cs" />
-    <Compile Include="MainForm.cs">
+    <Compile Include="UserLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <Compile Include="UserLogin.Designer.cs">
+      <DependentUpon>UserLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -83,17 +90,20 @@
     <Compile Include="WorkerLogin.Designer.cs">
       <DependentUpon>WorkerLogin.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UserMainForm.resx">
-      <DependentUpon>UserMainForm.cs</DependentUpon>
+    <EmbeddedResource Include="UserProcedure.resx">
+      <DependentUpon>UserProcedure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserRec.resx">
+      <DependentUpon>UserRec.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserRegistration.resx">
       <DependentUpon>UserRegistration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserServices.resx">
-      <DependentUpon>UserServices.cs</DependentUpon>
+    <EmbeddedResource Include="UserAddRec.resx">
+      <DependentUpon>UserAddRec.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <EmbeddedResource Include="UserLogin.resx">
+      <DependentUpon>UserLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -16,7 +16,8 @@ namespace ZhannaBeauty
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Application.Run(new UserLogin());
+            Application.ThreadExit += (object o, EventArgs ea) => DBProvider.connection.Dispose();
         }
     }
 }

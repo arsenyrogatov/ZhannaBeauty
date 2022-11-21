@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ZhannaBeauty
 {
-    public partial class MainForm : Form
+    public partial class UserLogin : Form
     {
-        public MainForm()
+        public UserLogin()
         {
             InitializeComponent();
         }
@@ -26,7 +26,7 @@ namespace ZhannaBeauty
                     MessageBox.Show("Неправильный логин или пароль!");
                 else
                 {
-                    UserMainForm clientMainForm = new UserMainForm();
+                    UserRec clientMainForm = new UserRec();
                     clientMainForm.InitializeUser(user);
                     clientMainForm.FormClosing += (object se, FormClosingEventArgs ee) => { this.Visible = true; };
                     this.Visible = false;

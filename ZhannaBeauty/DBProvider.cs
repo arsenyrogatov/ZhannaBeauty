@@ -8,7 +8,8 @@ namespace ZhannaBeauty
 {
     public static class DBProvider
     {
-        static string Server = "DESKTOP-OUCRF2M";
+        //static string Server = "DESKTOP-OUCRF2M";
+        static string Server = "LAPTOP-VERTER";
         static string Database = "салон красоты";
         public static System.Data.SqlClient.SqlConnection connection = new System.Data.SqlClient.SqlConnection($"Data Source={Server};Initial Catalog=\"{Database}\";Integrated Security=True");
         public static void Open()

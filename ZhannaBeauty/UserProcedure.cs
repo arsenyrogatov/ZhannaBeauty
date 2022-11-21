@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ZhannaBeauty
 {
-    public partial class UserServices : Form
+    public partial class UserProcedure : Form
     {
-        public UserServices()
+        public UserProcedure()
         {
             InitializeComponent();
         }

@@ -68,15 +68,15 @@ namespace ZhannaBeauty
             Phone = int.Parse(GetUserInfo.Parameters["@Phone"].Value.ToString());
         }
 
-        public DataTable GetUserServices ()
+        public DataTable GetUserRecs ()
         {
             var recTable = new DataTable();
-            System.Data.SqlClient.SqlCommand GetUserServices = new System.Data.SqlClient.SqlCommand("SELECT * FROM GetUserServices(@usrId)", DBProvider.connection);
-            GetUserServices.CommandType = System.Data.CommandType.Text;
-            GetUserServices.Parameters.Add("@usrId", System.Data.SqlDbType.Int);
-            GetUserServices.Parameters["@usrId"].Value = Id;
+            System.Data.SqlClient.SqlCommand GetUserRecs = new System.Data.SqlClient.SqlCommand("SELECT * FROM GetUserRecs(@usrId)", DBProvider.connection);
+            GetUserRecs.CommandType = System.Data.CommandType.Text;
+            GetUserRecs.Parameters.Add("@usrId", System.Data.SqlDbType.Int);
+            GetUserRecs.Parameters["@usrId"].Value = Id;
             DBProvider.Open();
-            recTable.Load(GetUserServices.ExecuteReader());
+            recTable.Load(GetUserRecs.ExecuteReader());
             DBProvider.Close();
             return recTable;
         }

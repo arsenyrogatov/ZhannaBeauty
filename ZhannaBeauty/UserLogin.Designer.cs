@@ -1,6 +1,6 @@
 ﻿namespace ZhannaBeauty
 {
-    partial class MainForm
+    partial class UserLogin
     {
         /// <summary>
         /// Обязательная переменная конструктора.
