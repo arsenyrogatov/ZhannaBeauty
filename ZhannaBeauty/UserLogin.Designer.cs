@@ -36,7 +36,7 @@
             this.username_textBox = new System.Windows.Forms.MaskedTextBox();
             this.regUser_linkLabel = new System.Windows.Forms.LinkLabel();
             this.label3 = new System.Windows.Forms.Label();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.worker_linkLabel = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -131,18 +131,19 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Нет учетной записи?";
             // 
-            // linkLabel2
+            // worker_linkLabel
             // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.linkLabel2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(0)))), ((int)(((byte)(151)))));
-            this.linkLabel2.Location = new System.Drawing.Point(341, 537);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(141, 17);
-            this.linkLabel2.TabIndex = 10;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Вход для сотрудников";
-            this.linkLabel2.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(0)))), ((int)(((byte)(151)))));
+            this.worker_linkLabel.AutoSize = true;
+            this.worker_linkLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.worker_linkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(0)))), ((int)(((byte)(151)))));
+            this.worker_linkLabel.Location = new System.Drawing.Point(341, 537);
+            this.worker_linkLabel.Name = "worker_linkLabel";
+            this.worker_linkLabel.Size = new System.Drawing.Size(141, 17);
+            this.worker_linkLabel.TabIndex = 10;
+            this.worker_linkLabel.TabStop = true;
+            this.worker_linkLabel.Text = "Вход для сотрудников";
+            this.worker_linkLabel.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(0)))), ((int)(((byte)(151)))));
+            this.worker_linkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.worker_linkLabel_LinkClicked);
             // 
             // pictureBox1
             // 
@@ -154,14 +155,14 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // MainForm
+            // UserLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(486, 563);
             this.Controls.Add(this.regUser_linkLabel);
-            this.Controls.Add(this.linkLabel2);
+            this.Controls.Add(this.worker_linkLabel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
@@ -169,7 +170,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "MainForm";
+            this.Name = "UserLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Добро пожаловать!";
             this.panel1.ResumeLayout(false);
@@ -190,7 +191,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.LinkLabel regUser_linkLabel;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.LinkLabel worker_linkLabel;
         private System.Windows.Forms.MaskedTextBox username_textBox;
     }
 }

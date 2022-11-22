@@ -26,8 +26,7 @@ namespace ZhannaBeauty
                     MessageBox.Show("Неправильный логин или пароль!");
                 else
                 {
-                    UserRec clientMainForm = new UserRec();
-                    clientMainForm.InitializeUser(user);
+                    UserRec clientMainForm = new UserRec(user);
                     clientMainForm.FormClosing += (object se, FormClosingEventArgs ee) => { this.Visible = true; };
                     this.Visible = false;
                     clientMainForm.ShowDialog();
@@ -43,6 +42,14 @@ namespace ZhannaBeauty
         {
             UserRegistration clientRegistration = new UserRegistration();
             clientRegistration.ShowDialog();
+        }
+
+        private void worker_linkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            WorkerLogin workerLogin = new WorkerLogin();
+            workerLogin.FormClosing += (object se, FormClosingEventArgs ee) => { this.Visible = true; };
+            this.Visible = false;
+            workerLogin.ShowDialog();
         }
     }
 }

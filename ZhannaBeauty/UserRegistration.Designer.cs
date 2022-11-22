@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.caption_label = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.birth_dateTimePicker = new System.Windows.Forms.DateTimePicker();
@@ -37,25 +37,25 @@
             this.genM_radioButton = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.phone_textBox = new System.Windows.Forms.MaskedTextBox();
             this.pwd2_textBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.pwd1_textBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.reg_button = new System.Windows.Forms.Button();
-            this.phone_textBox = new System.Windows.Forms.MaskedTextBox();
             this.FIO_textBox = new System.Windows.Forms.TextBox();
+            this.reg_button = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // caption_label
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Italic);
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(147, 30);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Регистрация";
+            this.caption_label.AutoSize = true;
+            this.caption_label.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Italic);
+            this.caption_label.Location = new System.Drawing.Point(12, 9);
+            this.caption_label.Name = "caption_label";
+            this.caption_label.Size = new System.Drawing.Size(147, 30);
+            this.caption_label.TabIndex = 0;
+            this.caption_label.Text = "Регистрация";
             // 
             // label2
             // 
@@ -148,6 +148,14 @@
             this.panel1.Size = new System.Drawing.Size(323, 229);
             this.panel1.TabIndex = 10;
             // 
+            // phone_textBox
+            // 
+            this.phone_textBox.Location = new System.Drawing.Point(138, 116);
+            this.phone_textBox.Mask = "000000000";
+            this.phone_textBox.Name = "phone_textBox";
+            this.phone_textBox.Size = new System.Drawing.Size(170, 25);
+            this.phone_textBox.TabIndex = 14;
+            // 
             // pwd2_textBox
             // 
             this.pwd2_textBox.Location = new System.Drawing.Point(138, 186);
@@ -182,6 +190,13 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Пароль";
             // 
+            // FIO_textBox
+            // 
+            this.FIO_textBox.Location = new System.Drawing.Point(138, 11);
+            this.FIO_textBox.Name = "FIO_textBox";
+            this.FIO_textBox.Size = new System.Drawing.Size(170, 25);
+            this.FIO_textBox.TabIndex = 2;
+            // 
             // reg_button
             // 
             this.reg_button.AutoSize = true;
@@ -194,22 +209,7 @@
             this.reg_button.UseVisualStyleBackColor = true;
             this.reg_button.Click += new System.EventHandler(this.reg_button_Click);
             // 
-            // phone_textBox
-            // 
-            this.phone_textBox.Location = new System.Drawing.Point(138, 116);
-            this.phone_textBox.Mask = "000000000";
-            this.phone_textBox.Name = "phone_textBox";
-            this.phone_textBox.Size = new System.Drawing.Size(170, 25);
-            this.phone_textBox.TabIndex = 14;
-            // 
-            // FIO_textBox
-            // 
-            this.FIO_textBox.Location = new System.Drawing.Point(138, 11);
-            this.FIO_textBox.Name = "FIO_textBox";
-            this.FIO_textBox.Size = new System.Drawing.Size(170, 25);
-            this.FIO_textBox.TabIndex = 2;
-            // 
-            // ClientRegistration
+            // UserRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
@@ -217,12 +217,12 @@
             this.ClientSize = new System.Drawing.Size(358, 328);
             this.Controls.Add(this.reg_button);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.caption_label);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "ClientRegistration";
+            this.Name = "UserRegistration";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Регистрация";
             this.panel1.ResumeLayout(false);
@@ -234,7 +234,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label caption_label;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker birth_dateTimePicker;

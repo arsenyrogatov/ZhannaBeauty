@@ -46,6 +46,18 @@ namespace ZhannaBeauty
             UpdateUserRec.ExecuteNonQuery();
             DBProvider.Close();
         }
+
+        public void DeleteRec()
+        {
+            System.Data.SqlClient.SqlCommand DeleteRec = new System.Data.SqlClient.SqlCommand("DeleteRec", DBProvider.connection);
+            DeleteRec.CommandType = System.Data.CommandType.StoredProcedure;
+            DeleteRec.Parameters.Add("@recId", System.Data.SqlDbType.Int);
+            DeleteRec.Parameters["@recId"].Value = ID;
+
+            DBProvider.Open();
+            DeleteRec.ExecuteNonQuery();
+            DBProvider.Close();
+        }
     }
 
     public static class RecTools
@@ -67,14 +79,11 @@ namespace ZhannaBeauty
             AddRec.ExecuteNonQuery();
             DBProvider.Close();
         }
-    }
 
-    public static class ServiceTools
-    {
-        public static DataTable GetServices()
+        public static DataTable GetRecs()
         {
             var recTable = new DataTable();
-            System.Data.SqlClient.SqlCommand GetAllServices = new System.Data.SqlClient.SqlCommand("SELECT * FROM GetAllServices()", DBProvider.connection);
+            System.Data.SqlClient.SqlCommand GetAllServices = new System.Data.SqlClient.SqlCommand("SELECT * FROM GetRecs()", DBProvider.connection);
             GetAllServices.CommandType = System.Data.CommandType.Text;
             DBProvider.Open();
             recTable.Load(GetAllServices.ExecuteReader());

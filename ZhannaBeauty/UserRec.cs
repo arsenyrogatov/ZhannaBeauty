@@ -16,13 +16,9 @@ namespace ZhannaBeauty
         public User user;
         const string textHint = "Поиск по названию услуги...";
 
-        public UserRec()
+        public UserRec(User user_)
         {
             InitializeComponent();
-        }
-
-        public void InitializeUser (User user_)
-        {
             user = user_;
             UpdateUser();
         }
@@ -124,5 +120,12 @@ namespace ZhannaBeauty
             userRecs.ShowDialog();
         }
 
+        private void user_linkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            UserProcedure userProcedure = new UserProcedure(user);
+            userProcedure.FormClosing += (object se, FormClosingEventArgs ee) => { this.Visible = true; };
+            this.Visible = false;
+            userProcedure.ShowDialog();
+        }
     }
 }
