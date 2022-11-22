@@ -34,6 +34,7 @@ namespace ZhannaBeauty
             {
                 caption_label.Text = "Изменить запись";
                 ok_button.Text = "Изменить";
+                rec_dateTimePicker.MinDate = rec.recDate.AddDays(-1);
                 rec_dateTimePicker.Value = rec.recDate;
             }
         }
