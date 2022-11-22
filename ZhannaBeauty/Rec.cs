@@ -47,6 +47,22 @@ namespace ZhannaBeauty
             DBProvider.Close();
         }
 
+        public void CreateProc(int workerId)
+        {
+            System.Data.SqlClient.SqlCommand AddProcByRec = new System.Data.SqlClient.SqlCommand("AddProcByRec", DBProvider.connection);
+            AddProcByRec.CommandType = System.Data.CommandType.StoredProcedure;
+
+            AddProcByRec.Parameters.Add("@recId", System.Data.SqlDbType.Int);
+            AddProcByRec.Parameters["@recId"].Value = ID;
+
+            AddProcByRec.Parameters.Add("@workerId", System.Data.SqlDbType.Int);
+            AddProcByRec.Parameters["@workerId"].Value = workerId;
+
+            DBProvider.Open();
+            AddProcByRec.ExecuteNonQuery();
+            DBProvider.Close();
+        }
+
         public void DeleteRec()
         {
             System.Data.SqlClient.SqlCommand DeleteRec = new System.Data.SqlClient.SqlCommand("DeleteRec", DBProvider.connection);

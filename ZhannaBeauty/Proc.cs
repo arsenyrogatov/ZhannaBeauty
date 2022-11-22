@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,20 @@ namespace ZhannaBeauty
             this.Name = procName;
             this.recDate = procDateTime;
             this.WorkerFIO = procFIO;
+        }
+    }
+
+    public static class ProcTools
+    {
+        public static DataTable GetProcs()
+        {
+            var recTable = new DataTable();
+            System.Data.SqlClient.SqlCommand GetProcs = new System.Data.SqlClient.SqlCommand("SELECT * FROM GetProcs()", DBProvider.connection);
+            GetProcs.CommandType = System.Data.CommandType.Text;
+            DBProvider.Open();
+            recTable.Load(GetProcs.ExecuteReader());
+            DBProvider.Close();
+            return recTable;
         }
     }
 }

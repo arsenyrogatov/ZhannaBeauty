@@ -44,22 +44,21 @@
             this.label29 = new System.Windows.Forms.Label();
             this.recs_dataGridView = new System.Windows.Forms.DataGridView();
             this.Proc_tabPage = new System.Windows.Forms.TabPage();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.showWorkerOnly_checkBox = new System.Windows.Forms.CheckBox();
+            this.procFind_textBox = new System.Windows.Forms.TextBox();
             this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button13 = new System.Windows.Forms.Button();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.addProcMaterial_button = new System.Windows.Forms.Button();
+            this.procMat_numericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label23 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.procMat_textBox = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.procMaterial_dataGridView = new System.Windows.Forms.DataGridView();
+            this.deleteProcMaterial_button = new System.Windows.Forms.Button();
+            this.saveProcMat_button = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.proc_dataGridView = new System.Windows.Forms.DataGridView();
             this.Service_tabPage = new System.Windows.Forms.TabPage();
             this.servSearch_textBox = new System.Windows.Forms.TextBox();
             this.servSearch_button = new System.Windows.Forms.Button();
@@ -79,6 +78,8 @@
             this.find_button = new System.Windows.Forms.Button();
             this.userAdd_button = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.userPwd_textBox = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
             this.userSave_button = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.userPhone_textBox = new System.Windows.Forms.MaskedTextBox();
@@ -99,6 +100,8 @@
             this.button4 = new System.Windows.Forms.Button();
             this.workerAdd_button = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.workerPwd_textBox = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
             this.workerWage_numericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label13 = new System.Windows.Forms.Label();
             this.workerRole_textBox = new System.Windows.Forms.TextBox();
@@ -114,21 +117,21 @@
             this.label17 = new System.Windows.Forms.Label();
             this.workers_dataGridView = new System.Windows.Forms.DataGridView();
             this.Material_tabPage = new System.Windows.Forms.TabPage();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.materialsFind_textBox = new System.Windows.Forms.TextBox();
             this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
+            this.addMaterial_button = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.button22 = new System.Windows.Forms.Button();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.button21 = new System.Windows.Forms.Button();
+            this.matDel_button = new System.Windows.Forms.Button();
+            this.matCount_numericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.matEd_textBox = new System.Windows.Forms.TextBox();
+            this.matSave_button = new System.Windows.Forms.Button();
             this.label31 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.matName_textBox = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.dataGridView7 = new System.Windows.Forms.DataGridView();
+            this.materials_dataGridView = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.workerWage_label = new System.Windows.Forms.Label();
             this.workerPhone_label = new System.Windows.Forms.Label();
@@ -138,19 +141,15 @@
             this.label11 = new System.Windows.Forms.Label();
             this.workerFIO_label = new System.Windows.Forms.Label();
             this.user_pictureBox = new System.Windows.Forms.PictureBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.userPwd_textBox = new System.Windows.Forms.TextBox();
-            this.workerPwd_textBox = new System.Windows.Forms.TextBox();
-            this.label32 = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.Rec_tabPage.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.recs_dataGridView)).BeginInit();
             this.Proc_tabPage.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.procMat_numericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.procMaterial_dataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proc_dataGridView)).BeginInit();
             this.Service_tabPage.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.servPrice_numericUpDown)).BeginInit();
@@ -164,8 +163,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.workers_dataGridView)).BeginInit();
             this.Material_tabPage.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.matCount_numericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.materials_dataGridView)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.user_pictureBox)).BeginInit();
             this.SuspendLayout();
@@ -354,13 +353,12 @@
             // 
             // Proc_tabPage
             // 
-            this.Proc_tabPage.Controls.Add(this.checkBox1);
-            this.Proc_tabPage.Controls.Add(this.textBox8);
+            this.Proc_tabPage.Controls.Add(this.showWorkerOnly_checkBox);
+            this.Proc_tabPage.Controls.Add(this.procFind_textBox);
             this.Proc_tabPage.Controls.Add(this.button9);
-            this.Proc_tabPage.Controls.Add(this.button10);
             this.Proc_tabPage.Controls.Add(this.panel5);
             this.Proc_tabPage.Controls.Add(this.label25);
-            this.Proc_tabPage.Controls.Add(this.dataGridView3);
+            this.Proc_tabPage.Controls.Add(this.proc_dataGridView);
             this.Proc_tabPage.Location = new System.Drawing.Point(4, 26);
             this.Proc_tabPage.Name = "Proc_tabPage";
             this.Proc_tabPage.Padding = new System.Windows.Forms.Padding(3);
@@ -369,25 +367,29 @@
             this.Proc_tabPage.Text = "Все процедуры";
             this.Proc_tabPage.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // showWorkerOnly_checkBox
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic);
-            this.checkBox1.Location = new System.Drawing.Point(536, 69);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(152, 21);
-            this.checkBox1.TabIndex = 50;
-            this.checkBox1.Text = "Показать услуги для";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.showWorkerOnly_checkBox.AutoSize = true;
+            this.showWorkerOnly_checkBox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic);
+            this.showWorkerOnly_checkBox.Location = new System.Drawing.Point(536, 69);
+            this.showWorkerOnly_checkBox.Name = "showWorkerOnly_checkBox";
+            this.showWorkerOnly_checkBox.Size = new System.Drawing.Size(152, 21);
+            this.showWorkerOnly_checkBox.TabIndex = 50;
+            this.showWorkerOnly_checkBox.Text = "Показать услуги для";
+            this.showWorkerOnly_checkBox.UseVisualStyleBackColor = true;
+            this.showWorkerOnly_checkBox.CheckedChanged += new System.EventHandler(this.showWorkerOnly_checkBox_CheckedChanged);
             // 
-            // textBox8
+            // procFind_textBox
             // 
-            this.textBox8.ForeColor = System.Drawing.Color.Gray;
-            this.textBox8.Location = new System.Drawing.Point(536, 40);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(227, 25);
-            this.textBox8.TabIndex = 49;
-            this.textBox8.Text = "Название услуги или ФИО...";
+            this.procFind_textBox.ForeColor = System.Drawing.Color.Gray;
+            this.procFind_textBox.Location = new System.Drawing.Point(536, 40);
+            this.procFind_textBox.Name = "procFind_textBox";
+            this.procFind_textBox.Size = new System.Drawing.Size(227, 25);
+            this.procFind_textBox.TabIndex = 49;
+            this.procFind_textBox.Text = "Название услуги или ФИО...";
+            this.procFind_textBox.TextChanged += new System.EventHandler(this.procFind_textBox_TextChanged);
+            this.procFind_textBox.Enter += new System.EventHandler(this.procFind_textBox_Enter);
+            this.procFind_textBox.Leave += new System.EventHandler(this.procFind_textBox_Leave);
             // 
             // button9
             // 
@@ -398,67 +400,47 @@
             this.button9.Text = "Поиск";
             this.button9.UseVisualStyleBackColor = true;
             // 
-            // button10
-            // 
-            this.button10.AutoSize = true;
-            this.button10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button10.Location = new System.Drawing.Point(536, 462);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(308, 27);
-            this.button10.TabIndex = 47;
-            this.button10.Text = "Добавить новую процедуру";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.button13);
-            this.panel5.Controls.Add(this.numericUpDown3);
+            this.panel5.Controls.Add(this.addProcMaterial_button);
+            this.panel5.Controls.Add(this.procMat_numericUpDown);
             this.panel5.Controls.Add(this.label23);
-            this.panel5.Controls.Add(this.textBox10);
+            this.panel5.Controls.Add(this.procMat_textBox);
             this.panel5.Controls.Add(this.label20);
-            this.panel5.Controls.Add(this.dataGridView4);
-            this.panel5.Controls.Add(this.button11);
-            this.panel5.Controls.Add(this.button12);
+            this.panel5.Controls.Add(this.procMaterial_dataGridView);
+            this.panel5.Controls.Add(this.deleteProcMaterial_button);
+            this.panel5.Controls.Add(this.saveProcMat_button);
             this.panel5.Controls.Add(this.label19);
             this.panel5.Location = new System.Drawing.Point(536, 92);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(308, 364);
+            this.panel5.Size = new System.Drawing.Size(308, 397);
             this.panel5.TabIndex = 46;
             // 
-            // button13
+            // addProcMaterial_button
             // 
-            this.button13.AutoSize = true;
-            this.button13.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button13.Location = new System.Drawing.Point(9, 325);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(287, 27);
-            this.button13.TabIndex = 55;
-            this.button13.Text = "Добавить расход";
-            this.button13.UseVisualStyleBackColor = true;
+            this.addProcMaterial_button.AutoSize = true;
+            this.addProcMaterial_button.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.addProcMaterial_button.Location = new System.Drawing.Point(9, 359);
+            this.addProcMaterial_button.Name = "addProcMaterial_button";
+            this.addProcMaterial_button.Size = new System.Drawing.Size(287, 27);
+            this.addProcMaterial_button.TabIndex = 55;
+            this.addProcMaterial_button.Text = "Добавить расход";
+            this.addProcMaterial_button.UseVisualStyleBackColor = true;
+            this.addProcMaterial_button.Click += new System.EventHandler(this.addProcMaterial_button_Click);
             // 
-            // numericUpDown3
+            // procMat_numericUpDown
             // 
-            this.numericUpDown3.Increment = new decimal(new int[] {
-            50,
-            0,
-            0,
-            0});
-            this.numericUpDown3.Location = new System.Drawing.Point(102, 228);
-            this.numericUpDown3.Maximum = new decimal(new int[] {
+            this.procMat_numericUpDown.Location = new System.Drawing.Point(102, 262);
+            this.procMat_numericUpDown.Maximum = new decimal(new int[] {
             10000000,
             0,
             0,
             0});
-            this.numericUpDown3.Minimum = new decimal(new int[] {
-            50,
-            0,
-            0,
-            0});
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(194, 25);
-            this.numericUpDown3.TabIndex = 54;
-            this.numericUpDown3.Value = new decimal(new int[] {
+            this.procMat_numericUpDown.Name = "procMat_numericUpDown";
+            this.procMat_numericUpDown.Size = new System.Drawing.Size(194, 25);
+            this.procMat_numericUpDown.TabIndex = 54;
+            this.procMat_numericUpDown.Value = new decimal(new int[] {
             50,
             0,
             0,
@@ -468,68 +450,71 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic);
-            this.label23.Location = new System.Drawing.Point(15, 232);
+            this.label23.Location = new System.Drawing.Point(15, 266);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(81, 17);
             this.label23.TabIndex = 53;
             this.label23.Text = "Количество";
             // 
-            // textBox10
+            // procMat_textBox
             // 
-            this.textBox10.Location = new System.Drawing.Point(102, 197);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(194, 25);
-            this.textBox10.TabIndex = 52;
+            this.procMat_textBox.Location = new System.Drawing.Point(102, 231);
+            this.procMat_textBox.Name = "procMat_textBox";
+            this.procMat_textBox.ReadOnly = true;
+            this.procMat_textBox.Size = new System.Drawing.Size(194, 25);
+            this.procMat_textBox.TabIndex = 52;
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic);
-            this.label20.Location = new System.Drawing.Point(32, 201);
+            this.label20.Location = new System.Drawing.Point(32, 235);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(64, 17);
             this.label20.TabIndex = 51;
             this.label20.Text = "Название";
             // 
-            // dataGridView4
+            // procMaterial_dataGridView
             // 
-            this.dataGridView4.AllowUserToAddRows = false;
-            this.dataGridView4.AllowUserToDeleteRows = false;
-            this.dataGridView4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(9, 38);
-            this.dataGridView4.MultiSelect = false;
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.ReadOnly = true;
-            this.dataGridView4.RowHeadersVisible = false;
-            this.dataGridView4.RowHeadersWidth = 72;
-            this.dataGridView4.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView4.Size = new System.Drawing.Size(287, 153);
-            this.dataGridView4.TabIndex = 50;
+            this.procMaterial_dataGridView.AllowUserToAddRows = false;
+            this.procMaterial_dataGridView.AllowUserToDeleteRows = false;
+            this.procMaterial_dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.procMaterial_dataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
+            this.procMaterial_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.procMaterial_dataGridView.Location = new System.Drawing.Point(9, 38);
+            this.procMaterial_dataGridView.MultiSelect = false;
+            this.procMaterial_dataGridView.Name = "procMaterial_dataGridView";
+            this.procMaterial_dataGridView.ReadOnly = true;
+            this.procMaterial_dataGridView.RowHeadersVisible = false;
+            this.procMaterial_dataGridView.RowHeadersWidth = 72;
+            this.procMaterial_dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.procMaterial_dataGridView.Size = new System.Drawing.Size(287, 187);
+            this.procMaterial_dataGridView.TabIndex = 50;
+            this.procMaterial_dataGridView.SelectionChanged += new System.EventHandler(this.procMaterial_dataGridView_SelectionChanged);
             // 
-            // button11
+            // deleteProcMaterial_button
             // 
-            this.button11.AutoSize = true;
-            this.button11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button11.Location = new System.Drawing.Point(9, 292);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(287, 27);
-            this.button11.TabIndex = 36;
-            this.button11.Text = "Удалить расход";
-            this.button11.UseVisualStyleBackColor = true;
+            this.deleteProcMaterial_button.AutoSize = true;
+            this.deleteProcMaterial_button.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.deleteProcMaterial_button.Location = new System.Drawing.Point(9, 326);
+            this.deleteProcMaterial_button.Name = "deleteProcMaterial_button";
+            this.deleteProcMaterial_button.Size = new System.Drawing.Size(287, 27);
+            this.deleteProcMaterial_button.TabIndex = 36;
+            this.deleteProcMaterial_button.Text = "Удалить расход";
+            this.deleteProcMaterial_button.UseVisualStyleBackColor = true;
+            this.deleteProcMaterial_button.Click += new System.EventHandler(this.deleteProcMaterial_button_Click);
             // 
-            // button12
+            // saveProcMat_button
             // 
-            this.button12.AutoSize = true;
-            this.button12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button12.Location = new System.Drawing.Point(9, 259);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(287, 27);
-            this.button12.TabIndex = 34;
-            this.button12.Text = "Сохранить";
-            this.button12.UseVisualStyleBackColor = true;
+            this.saveProcMat_button.AutoSize = true;
+            this.saveProcMat_button.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.saveProcMat_button.Location = new System.Drawing.Point(9, 293);
+            this.saveProcMat_button.Name = "saveProcMat_button";
+            this.saveProcMat_button.Size = new System.Drawing.Size(287, 27);
+            this.saveProcMat_button.TabIndex = 34;
+            this.saveProcMat_button.Text = "Сохранить";
+            this.saveProcMat_button.UseVisualStyleBackColor = true;
+            this.saveProcMat_button.Click += new System.EventHandler(this.saveProcMat_button_Click);
             // 
             // label19
             // 
@@ -551,22 +536,23 @@
             this.label25.TabIndex = 45;
             this.label25.Text = "Список процедур";
             // 
-            // dataGridView3
+            // proc_dataGridView
             // 
-            this.dataGridView3.AllowUserToAddRows = false;
-            this.dataGridView3.AllowUserToDeleteRows = false;
-            this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(16, 40);
-            this.dataGridView3.MultiSelect = false;
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.ReadOnly = true;
-            this.dataGridView3.RowHeadersVisible = false;
-            this.dataGridView3.RowHeadersWidth = 72;
-            this.dataGridView3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView3.Size = new System.Drawing.Size(514, 449);
-            this.dataGridView3.TabIndex = 44;
+            this.proc_dataGridView.AllowUserToAddRows = false;
+            this.proc_dataGridView.AllowUserToDeleteRows = false;
+            this.proc_dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.proc_dataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
+            this.proc_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.proc_dataGridView.Location = new System.Drawing.Point(16, 40);
+            this.proc_dataGridView.MultiSelect = false;
+            this.proc_dataGridView.Name = "proc_dataGridView";
+            this.proc_dataGridView.ReadOnly = true;
+            this.proc_dataGridView.RowHeadersVisible = false;
+            this.proc_dataGridView.RowHeadersWidth = 72;
+            this.proc_dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.proc_dataGridView.Size = new System.Drawing.Size(514, 449);
+            this.proc_dataGridView.TabIndex = 44;
+            this.proc_dataGridView.SelectionChanged += new System.EventHandler(this.proc_dataGridView_SelectionChanged);
             // 
             // Service_tabPage
             // 
@@ -821,6 +807,23 @@
             this.panel1.Size = new System.Drawing.Size(308, 273);
             this.panel1.TabIndex = 31;
             // 
+            // userPwd_textBox
+            // 
+            this.userPwd_textBox.Location = new System.Drawing.Point(111, 204);
+            this.userPwd_textBox.Name = "userPwd_textBox";
+            this.userPwd_textBox.Size = new System.Drawing.Size(183, 25);
+            this.userPwd_textBox.TabIndex = 36;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic);
+            this.label30.Location = new System.Drawing.Point(53, 207);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(52, 17);
+            this.label30.TabIndex = 35;
+            this.label30.Text = "Пароль";
+            // 
             // userSave_button
             // 
             this.userSave_button.AutoSize = true;
@@ -1044,6 +1047,23 @@
             this.panel3.Size = new System.Drawing.Size(308, 271);
             this.panel3.TabIndex = 34;
             // 
+            // workerPwd_textBox
+            // 
+            this.workerPwd_textBox.Location = new System.Drawing.Point(111, 195);
+            this.workerPwd_textBox.Name = "workerPwd_textBox";
+            this.workerPwd_textBox.Size = new System.Drawing.Size(183, 25);
+            this.workerPwd_textBox.TabIndex = 39;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic);
+            this.label32.Location = new System.Drawing.Point(53, 198);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(52, 17);
+            this.label32.TabIndex = 38;
+            this.label32.Text = "Пароль";
+            // 
             // workerWage_numericUpDown
             // 
             this.workerWage_numericUpDown.Increment = new decimal(new int[] {
@@ -1203,12 +1223,12 @@
             // 
             // Material_tabPage
             // 
-            this.Material_tabPage.Controls.Add(this.textBox13);
+            this.Material_tabPage.Controls.Add(this.materialsFind_textBox);
             this.Material_tabPage.Controls.Add(this.button19);
-            this.Material_tabPage.Controls.Add(this.button20);
+            this.Material_tabPage.Controls.Add(this.addMaterial_button);
             this.Material_tabPage.Controls.Add(this.panel7);
             this.Material_tabPage.Controls.Add(this.label36);
-            this.Material_tabPage.Controls.Add(this.dataGridView7);
+            this.Material_tabPage.Controls.Add(this.materials_dataGridView);
             this.Material_tabPage.Location = new System.Drawing.Point(4, 26);
             this.Material_tabPage.Name = "Material_tabPage";
             this.Material_tabPage.Padding = new System.Windows.Forms.Padding(3);
@@ -1217,14 +1237,17 @@
             this.Material_tabPage.Text = "Учет расходных материалов";
             this.Material_tabPage.UseVisualStyleBackColor = true;
             // 
-            // textBox13
+            // materialsFind_textBox
             // 
-            this.textBox13.ForeColor = System.Drawing.Color.Gray;
-            this.textBox13.Location = new System.Drawing.Point(536, 40);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(227, 25);
-            this.textBox13.TabIndex = 45;
-            this.textBox13.Text = "Название расходного материала...";
+            this.materialsFind_textBox.ForeColor = System.Drawing.Color.Gray;
+            this.materialsFind_textBox.Location = new System.Drawing.Point(536, 40);
+            this.materialsFind_textBox.Name = "materialsFind_textBox";
+            this.materialsFind_textBox.Size = new System.Drawing.Size(227, 25);
+            this.materialsFind_textBox.TabIndex = 45;
+            this.materialsFind_textBox.Text = "Название расходного материала...";
+            this.materialsFind_textBox.TextChanged += new System.EventHandler(this.materialsFind_textBox_TextChanged);
+            this.materialsFind_textBox.Enter += new System.EventHandler(this.materialsFind_textBox_Enter);
+            this.materialsFind_textBox.Leave += new System.EventHandler(this.materialsFind_textBox_Leave);
             // 
             // button19
             // 
@@ -1235,26 +1258,27 @@
             this.button19.Text = "Поиск";
             this.button19.UseVisualStyleBackColor = true;
             // 
-            // button20
+            // addMaterial_button
             // 
-            this.button20.AutoSize = true;
-            this.button20.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button20.Location = new System.Drawing.Point(536, 295);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(308, 27);
-            this.button20.TabIndex = 43;
-            this.button20.Text = "Добавить новый материал";
-            this.button20.UseVisualStyleBackColor = true;
+            this.addMaterial_button.AutoSize = true;
+            this.addMaterial_button.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.addMaterial_button.Location = new System.Drawing.Point(536, 295);
+            this.addMaterial_button.Name = "addMaterial_button";
+            this.addMaterial_button.Size = new System.Drawing.Size(308, 27);
+            this.addMaterial_button.TabIndex = 43;
+            this.addMaterial_button.Text = "Добавить новый материал";
+            this.addMaterial_button.UseVisualStyleBackColor = true;
+            this.addMaterial_button.Click += new System.EventHandler(this.addMaterial_button_Click);
             // 
             // panel7
             // 
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.button22);
-            this.panel7.Controls.Add(this.numericUpDown5);
-            this.panel7.Controls.Add(this.textBox14);
-            this.panel7.Controls.Add(this.button21);
+            this.panel7.Controls.Add(this.matDel_button);
+            this.panel7.Controls.Add(this.matCount_numericUpDown);
+            this.panel7.Controls.Add(this.matEd_textBox);
+            this.panel7.Controls.Add(this.matSave_button);
             this.panel7.Controls.Add(this.label31);
-            this.panel7.Controls.Add(this.textBox16);
+            this.panel7.Controls.Add(this.matName_textBox);
             this.panel7.Controls.Add(this.label33);
             this.panel7.Controls.Add(this.label34);
             this.panel7.Controls.Add(this.label35);
@@ -1263,61 +1287,53 @@
             this.panel7.Size = new System.Drawing.Size(308, 218);
             this.panel7.TabIndex = 42;
             // 
-            // button22
+            // matDel_button
             // 
-            this.button22.AutoSize = true;
-            this.button22.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button22.Location = new System.Drawing.Point(11, 175);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(283, 27);
-            this.button22.TabIndex = 38;
-            this.button22.Text = "Удалить материал";
-            this.button22.UseVisualStyleBackColor = true;
+            this.matDel_button.AutoSize = true;
+            this.matDel_button.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.matDel_button.Location = new System.Drawing.Point(11, 175);
+            this.matDel_button.Name = "matDel_button";
+            this.matDel_button.Size = new System.Drawing.Size(283, 27);
+            this.matDel_button.TabIndex = 38;
+            this.matDel_button.Text = "Удалить материал";
+            this.matDel_button.UseVisualStyleBackColor = true;
+            this.matDel_button.Click += new System.EventHandler(this.matDel_button_Click);
             // 
-            // numericUpDown5
+            // matCount_numericUpDown
             // 
-            this.numericUpDown5.Increment = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numericUpDown5.Location = new System.Drawing.Point(111, 71);
-            this.numericUpDown5.Maximum = new decimal(new int[] {
+            this.matCount_numericUpDown.Location = new System.Drawing.Point(111, 71);
+            this.matCount_numericUpDown.Maximum = new decimal(new int[] {
             99999999,
             0,
             0,
             0});
-            this.numericUpDown5.Minimum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(183, 25);
-            this.numericUpDown5.TabIndex = 37;
-            this.numericUpDown5.Value = new decimal(new int[] {
+            this.matCount_numericUpDown.Name = "matCount_numericUpDown";
+            this.matCount_numericUpDown.Size = new System.Drawing.Size(183, 25);
+            this.matCount_numericUpDown.TabIndex = 37;
+            this.matCount_numericUpDown.Value = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             // 
-            // textBox14
+            // matEd_textBox
             // 
-            this.textBox14.Location = new System.Drawing.Point(111, 102);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(183, 25);
-            this.textBox14.TabIndex = 35;
+            this.matEd_textBox.Location = new System.Drawing.Point(111, 102);
+            this.matEd_textBox.Name = "matEd_textBox";
+            this.matEd_textBox.Size = new System.Drawing.Size(183, 25);
+            this.matEd_textBox.TabIndex = 35;
             // 
-            // button21
+            // matSave_button
             // 
-            this.button21.AutoSize = true;
-            this.button21.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button21.Location = new System.Drawing.Point(11, 142);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(283, 27);
-            this.button21.TabIndex = 34;
-            this.button21.Text = "Сохранить";
-            this.button21.UseVisualStyleBackColor = true;
+            this.matSave_button.AutoSize = true;
+            this.matSave_button.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.matSave_button.Location = new System.Drawing.Point(11, 142);
+            this.matSave_button.Name = "matSave_button";
+            this.matSave_button.Size = new System.Drawing.Size(283, 27);
+            this.matSave_button.TabIndex = 34;
+            this.matSave_button.Text = "Сохранить";
+            this.matSave_button.UseVisualStyleBackColor = true;
+            this.matSave_button.Click += new System.EventHandler(this.matSave_button_Click);
             // 
             // label31
             // 
@@ -1329,13 +1345,13 @@
             this.label31.TabIndex = 33;
             this.label31.Text = "Редактирование";
             // 
-            // textBox16
+            // matName_textBox
             // 
-            this.textBox16.Location = new System.Drawing.Point(111, 39);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.ReadOnly = true;
-            this.textBox16.Size = new System.Drawing.Size(183, 25);
-            this.textBox16.TabIndex = 27;
+            this.matName_textBox.Location = new System.Drawing.Point(111, 39);
+            this.matName_textBox.Name = "matName_textBox";
+            this.matName_textBox.ReadOnly = true;
+            this.matName_textBox.Size = new System.Drawing.Size(183, 25);
+            this.matName_textBox.TabIndex = 27;
             // 
             // label33
             // 
@@ -1377,22 +1393,23 @@
             this.label36.TabIndex = 41;
             this.label36.Text = "Список расходных материалов";
             // 
-            // dataGridView7
+            // materials_dataGridView
             // 
-            this.dataGridView7.AllowUserToAddRows = false;
-            this.dataGridView7.AllowUserToDeleteRows = false;
-            this.dataGridView7.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView7.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
-            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView7.Location = new System.Drawing.Point(16, 40);
-            this.dataGridView7.MultiSelect = false;
-            this.dataGridView7.Name = "dataGridView7";
-            this.dataGridView7.ReadOnly = true;
-            this.dataGridView7.RowHeadersVisible = false;
-            this.dataGridView7.RowHeadersWidth = 72;
-            this.dataGridView7.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView7.Size = new System.Drawing.Size(514, 449);
-            this.dataGridView7.TabIndex = 40;
+            this.materials_dataGridView.AllowUserToAddRows = false;
+            this.materials_dataGridView.AllowUserToDeleteRows = false;
+            this.materials_dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.materials_dataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
+            this.materials_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.materials_dataGridView.Location = new System.Drawing.Point(16, 40);
+            this.materials_dataGridView.MultiSelect = false;
+            this.materials_dataGridView.Name = "materials_dataGridView";
+            this.materials_dataGridView.ReadOnly = true;
+            this.materials_dataGridView.RowHeadersVisible = false;
+            this.materials_dataGridView.RowHeadersWidth = 72;
+            this.materials_dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.materials_dataGridView.Size = new System.Drawing.Size(514, 449);
+            this.materials_dataGridView.TabIndex = 40;
+            this.materials_dataGridView.SelectionChanged += new System.EventHandler(this.materials_dataGridView_SelectionChanged);
             // 
             // panel2
             // 
@@ -1484,40 +1501,6 @@
             this.user_pictureBox.TabIndex = 20;
             this.user_pictureBox.TabStop = false;
             // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic);
-            this.label30.Location = new System.Drawing.Point(53, 207);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(52, 17);
-            this.label30.TabIndex = 35;
-            this.label30.Text = "Пароль";
-            // 
-            // userPwd_textBox
-            // 
-            this.userPwd_textBox.Location = new System.Drawing.Point(111, 204);
-            this.userPwd_textBox.Name = "userPwd_textBox";
-            this.userPwd_textBox.Size = new System.Drawing.Size(183, 25);
-            this.userPwd_textBox.TabIndex = 36;
-            // 
-            // workerPwd_textBox
-            // 
-            this.workerPwd_textBox.Location = new System.Drawing.Point(111, 195);
-            this.workerPwd_textBox.Name = "workerPwd_textBox";
-            this.workerPwd_textBox.Size = new System.Drawing.Size(183, 25);
-            this.workerPwd_textBox.TabIndex = 39;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic);
-            this.label32.Location = new System.Drawing.Point(53, 198);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(52, 17);
-            this.label32.TabIndex = 38;
-            this.label32.Text = "Пароль";
-            // 
             // WorkerProcedure
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -1543,9 +1526,9 @@
             this.Proc_tabPage.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.procMat_numericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.procMaterial_dataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proc_dataGridView)).EndInit();
             this.Service_tabPage.ResumeLayout(false);
             this.Service_tabPage.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -1567,8 +1550,8 @@
             this.Material_tabPage.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.matCount_numericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.materials_dataGridView)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.user_pictureBox)).EndInit();
@@ -1637,21 +1620,20 @@
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.DataGridView recs_dataGridView;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox procFind_textBox;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.Button addProcMaterial_button;
+        private System.Windows.Forms.NumericUpDown procMat_numericUpDown;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox procMat_textBox;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.DataGridView dataGridView4;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.DataGridView procMaterial_dataGridView;
+        private System.Windows.Forms.Button deleteProcMaterial_button;
+        private System.Windows.Forms.Button saveProcMat_button;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView proc_dataGridView;
         private System.Windows.Forms.TextBox servSearch_textBox;
         private System.Windows.Forms.Button servSearch_button;
         private System.Windows.Forms.Button servAdd_button;
@@ -1666,22 +1648,22 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.DataGridView services_dataGridView;
         private System.Windows.Forms.TabPage Material_tabPage;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox materialsFind_textBox;
         private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button addMaterial_button;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.NumericUpDown numericUpDown5;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button matDel_button;
+        private System.Windows.Forms.NumericUpDown matCount_numericUpDown;
+        private System.Windows.Forms.TextBox matEd_textBox;
+        private System.Windows.Forms.Button matSave_button;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox matName_textBox;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.DataGridView dataGridView7;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.DataGridView materials_dataGridView;
+        private System.Windows.Forms.CheckBox showWorkerOnly_checkBox;
         private System.Windows.Forms.Button deleteRec_button;
         private System.Windows.Forms.Button saveRec_button;
         private System.Windows.Forms.Label label26;
