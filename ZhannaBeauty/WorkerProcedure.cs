@@ -43,10 +43,14 @@ namespace ZhannaBeauty
             UpdateWorker();
             UpdateRecs();
             UpdateServices();
-            UpdateUsers();
-            UpdateWorkers();
             UpdateMaterials();
             UpdateProcedures();
+
+            if (worker.Role == "Менеджер")
+            {
+                UpdateUsers();
+                UpdateWorkers();
+            }
         }
 
         private void UpdateWorker()
