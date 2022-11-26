@@ -201,6 +201,7 @@
             this.Rec_tabPage.TabIndex = 0;
             this.Rec_tabPage.Text = "Все записи";
             this.Rec_tabPage.UseVisualStyleBackColor = true;
+            this.Rec_tabPage.Enter += new System.EventHandler(this.Rec_tabPage_Enter);
             // 
             // recSearch_textBox
             // 
@@ -233,7 +234,7 @@
             this.addRec_button.Location = new System.Drawing.Point(938, 441);
             this.addRec_button.Margin = new System.Windows.Forms.Padding(5);
             this.addRec_button.Name = "addRec_button";
-            this.addRec_button.Size = new System.Drawing.Size(539, 72);
+            this.addRec_button.Size = new System.Drawing.Size(539, 44);
             this.addRec_button.TabIndex = 53;
             this.addRec_button.Text = "Добавить новую запись";
             this.addRec_button.UseVisualStyleBackColor = true;
@@ -285,9 +286,9 @@
             this.deleteRec_button.Location = new System.Drawing.Point(16, 234);
             this.deleteRec_button.Margin = new System.Windows.Forms.Padding(5);
             this.deleteRec_button.Name = "deleteRec_button";
-            this.deleteRec_button.Size = new System.Drawing.Size(495, 72);
+            this.deleteRec_button.Size = new System.Drawing.Size(495, 44);
             this.deleteRec_button.TabIndex = 42;
-            this.deleteRec_button.Text = "Удалить услугу";
+            this.deleteRec_button.Text = "Удалить запись";
             this.deleteRec_button.UseVisualStyleBackColor = true;
             this.deleteRec_button.Click += new System.EventHandler(this.deleteRec_button_Click);
             // 
@@ -298,7 +299,7 @@
             this.saveRec_button.Location = new System.Drawing.Point(16, 177);
             this.saveRec_button.Margin = new System.Windows.Forms.Padding(5);
             this.saveRec_button.Name = "saveRec_button";
-            this.saveRec_button.Size = new System.Drawing.Size(495, 72);
+            this.saveRec_button.Size = new System.Drawing.Size(495, 47);
             this.saveRec_button.TabIndex = 40;
             this.saveRec_button.Text = "Сохранить";
             this.saveRec_button.UseVisualStyleBackColor = true;
@@ -383,6 +384,7 @@
             this.Proc_tabPage.TabIndex = 1;
             this.Proc_tabPage.Text = "Все процедуры";
             this.Proc_tabPage.UseVisualStyleBackColor = true;
+            this.Proc_tabPage.Enter += new System.EventHandler(this.Proc_tabPage_Enter);
             // 
             // showWorkerOnly_checkBox
             // 
@@ -445,7 +447,7 @@
             this.addProcMaterial_button.Location = new System.Drawing.Point(16, 628);
             this.addProcMaterial_button.Margin = new System.Windows.Forms.Padding(5);
             this.addProcMaterial_button.Name = "addProcMaterial_button";
-            this.addProcMaterial_button.Size = new System.Drawing.Size(502, 72);
+            this.addProcMaterial_button.Size = new System.Drawing.Size(502, 44);
             this.addProcMaterial_button.TabIndex = 55;
             this.addProcMaterial_button.Text = "Добавить расход";
             this.addProcMaterial_button.UseVisualStyleBackColor = true;
@@ -526,7 +528,7 @@
             this.deleteProcMaterial_button.Location = new System.Drawing.Point(16, 570);
             this.deleteProcMaterial_button.Margin = new System.Windows.Forms.Padding(5);
             this.deleteProcMaterial_button.Name = "deleteProcMaterial_button";
-            this.deleteProcMaterial_button.Size = new System.Drawing.Size(502, 72);
+            this.deleteProcMaterial_button.Size = new System.Drawing.Size(502, 44);
             this.deleteProcMaterial_button.TabIndex = 36;
             this.deleteProcMaterial_button.Text = "Удалить расход";
             this.deleteProcMaterial_button.UseVisualStyleBackColor = true;
@@ -539,7 +541,7 @@
             this.saveProcMat_button.Location = new System.Drawing.Point(16, 513);
             this.saveProcMat_button.Margin = new System.Windows.Forms.Padding(5);
             this.saveProcMat_button.Name = "saveProcMat_button";
-            this.saveProcMat_button.Size = new System.Drawing.Size(502, 72);
+            this.saveProcMat_button.Size = new System.Drawing.Size(502, 44);
             this.saveProcMat_button.TabIndex = 34;
             this.saveProcMat_button.Text = "Сохранить";
             this.saveProcMat_button.UseVisualStyleBackColor = true;
@@ -602,6 +604,7 @@
             this.Service_tabPage.TabIndex = 2;
             this.Service_tabPage.Text = "Управление услугами";
             this.Service_tabPage.UseVisualStyleBackColor = true;
+            this.Service_tabPage.Enter += new System.EventHandler(this.Service_tabPage_Enter);
             // 
             // servSearch_textBox
             // 
@@ -633,7 +636,7 @@
             this.servAdd_button.Location = new System.Drawing.Point(938, 446);
             this.servAdd_button.Margin = new System.Windows.Forms.Padding(5);
             this.servAdd_button.Name = "servAdd_button";
-            this.servAdd_button.Size = new System.Drawing.Size(539, 72);
+            this.servAdd_button.Size = new System.Drawing.Size(539, 44);
             this.servAdd_button.TabIndex = 41;
             this.servAdd_button.Text = "Добавить новую услугу";
             this.servAdd_button.UseVisualStyleBackColor = true;
@@ -662,7 +665,7 @@
             this.servDelete_button.Location = new System.Drawing.Point(19, 234);
             this.servDelete_button.Margin = new System.Windows.Forms.Padding(5);
             this.servDelete_button.Name = "servDelete_button";
-            this.servDelete_button.Size = new System.Drawing.Size(495, 72);
+            this.servDelete_button.Size = new System.Drawing.Size(495, 44);
             this.servDelete_button.TabIndex = 36;
             this.servDelete_button.Text = "Удалить услугу";
             this.servDelete_button.UseVisualStyleBackColor = true;
@@ -703,7 +706,7 @@
             this.servSave_button.Location = new System.Drawing.Point(19, 177);
             this.servSave_button.Margin = new System.Windows.Forms.Padding(5);
             this.servSave_button.Name = "servSave_button";
-            this.servSave_button.Size = new System.Drawing.Size(495, 72);
+            this.servSave_button.Size = new System.Drawing.Size(495, 44);
             this.servSave_button.TabIndex = 34;
             this.servSave_button.Text = "Сохранить";
             this.servSave_button.UseVisualStyleBackColor = true;
@@ -797,6 +800,7 @@
             this.Client_tabPage.TabIndex = 3;
             this.Client_tabPage.Text = "Управление клиентами";
             this.Client_tabPage.UseVisualStyleBackColor = true;
+            this.Client_tabPage.Enter += new System.EventHandler(this.Client_tabPage_Enter);
             // 
             // userFind_textBox
             // 
@@ -828,7 +832,7 @@
             this.userAdd_button.Location = new System.Drawing.Point(938, 612);
             this.userAdd_button.Margin = new System.Windows.Forms.Padding(5);
             this.userAdd_button.Name = "userAdd_button";
-            this.userAdd_button.Size = new System.Drawing.Size(539, 72);
+            this.userAdd_button.Size = new System.Drawing.Size(539, 44);
             this.userAdd_button.TabIndex = 35;
             this.userAdd_button.Text = "Добавить нового клиента";
             this.userAdd_button.UseVisualStyleBackColor = true;
@@ -884,7 +888,7 @@
             this.userSave_button.Location = new System.Drawing.Point(19, 411);
             this.userSave_button.Margin = new System.Windows.Forms.Padding(5);
             this.userSave_button.Name = "userSave_button";
-            this.userSave_button.Size = new System.Drawing.Size(495, 72);
+            this.userSave_button.Size = new System.Drawing.Size(495, 44);
             this.userSave_button.TabIndex = 34;
             this.userSave_button.Text = "Сохранить";
             this.userSave_button.UseVisualStyleBackColor = true;
@@ -1060,6 +1064,7 @@
             this.Worker_tabPage.TabIndex = 4;
             this.Worker_tabPage.Text = "Управление сотрудниками";
             this.Worker_tabPage.UseVisualStyleBackColor = true;
+            this.Worker_tabPage.Enter += new System.EventHandler(this.Worker_tabPage_Enter);
             // 
             // workersFind_textBox
             // 
@@ -1091,7 +1096,7 @@
             this.workerAdd_button.Location = new System.Drawing.Point(938, 609);
             this.workerAdd_button.Margin = new System.Windows.Forms.Padding(5);
             this.workerAdd_button.Name = "workerAdd_button";
-            this.workerAdd_button.Size = new System.Drawing.Size(576, 72);
+            this.workerAdd_button.Size = new System.Drawing.Size(539, 44);
             this.workerAdd_button.TabIndex = 36;
             this.workerAdd_button.Text = "Добавить нового сотрудника";
             this.workerAdd_button.UseVisualStyleBackColor = true;
@@ -1193,7 +1198,7 @@
             this.workerSave_button.Location = new System.Drawing.Point(19, 402);
             this.workerSave_button.Margin = new System.Windows.Forms.Padding(5);
             this.workerSave_button.Name = "workerSave_button";
-            this.workerSave_button.Size = new System.Drawing.Size(495, 72);
+            this.workerSave_button.Size = new System.Drawing.Size(495, 44);
             this.workerSave_button.TabIndex = 34;
             this.workerSave_button.Text = "Сохранить";
             this.workerSave_button.UseVisualStyleBackColor = true;
@@ -1326,6 +1331,7 @@
             this.Material_tabPage.TabIndex = 5;
             this.Material_tabPage.Text = "Учет расходных материалов";
             this.Material_tabPage.UseVisualStyleBackColor = true;
+            this.Material_tabPage.Enter += new System.EventHandler(this.Material_tabPage_Enter);
             // 
             // materialsFind_textBox
             // 
@@ -1357,7 +1363,7 @@
             this.addMaterial_button.Location = new System.Drawing.Point(938, 516);
             this.addMaterial_button.Margin = new System.Windows.Forms.Padding(5);
             this.addMaterial_button.Name = "addMaterial_button";
-            this.addMaterial_button.Size = new System.Drawing.Size(539, 72);
+            this.addMaterial_button.Size = new System.Drawing.Size(539, 44);
             this.addMaterial_button.TabIndex = 43;
             this.addMaterial_button.Text = "Добавить новый материал";
             this.addMaterial_button.UseVisualStyleBackColor = true;
@@ -1388,7 +1394,7 @@
             this.matDel_button.Location = new System.Drawing.Point(19, 306);
             this.matDel_button.Margin = new System.Windows.Forms.Padding(5);
             this.matDel_button.Name = "matDel_button";
-            this.matDel_button.Size = new System.Drawing.Size(495, 72);
+            this.matDel_button.Size = new System.Drawing.Size(495, 44);
             this.matDel_button.TabIndex = 38;
             this.matDel_button.Text = "Удалить материал";
             this.matDel_button.UseVisualStyleBackColor = true;
@@ -1427,7 +1433,7 @@
             this.matSave_button.Location = new System.Drawing.Point(19, 248);
             this.matSave_button.Margin = new System.Windows.Forms.Padding(5);
             this.matSave_button.Name = "matSave_button";
-            this.matSave_button.Size = new System.Drawing.Size(495, 72);
+            this.matSave_button.Size = new System.Drawing.Size(495, 44);
             this.matSave_button.TabIndex = 34;
             this.matSave_button.Text = "Сохранить";
             this.matSave_button.UseVisualStyleBackColor = true;

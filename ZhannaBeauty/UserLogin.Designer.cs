@@ -68,7 +68,7 @@
             // pwd_textBox
             // 
             this.pwd_textBox.Location = new System.Drawing.Point(82, 124);
-            this.pwd_textBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pwd_textBox.Margin = new System.Windows.Forms.Padding(5);
             this.pwd_textBox.Name = "pwd_textBox";
             this.pwd_textBox.PasswordChar = '*';
             this.pwd_textBox.Size = new System.Drawing.Size(275, 38);
@@ -80,9 +80,9 @@
             this.userLogin_button.AutoSize = true;
             this.userLogin_button.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.userLogin_button.Location = new System.Drawing.Point(82, 178);
-            this.userLogin_button.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.userLogin_button.Margin = new System.Windows.Forms.Padding(5);
             this.userLogin_button.Name = "userLogin_button";
-            this.userLogin_button.Size = new System.Drawing.Size(278, 72);
+            this.userLogin_button.Size = new System.Drawing.Size(278, 44);
             this.userLogin_button.TabIndex = 5;
             this.userLogin_button.Text = "Войти!";
             this.userLogin_button.UseVisualStyleBackColor = true;
@@ -98,7 +98,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.pwd_textBox);
             this.panel1.Location = new System.Drawing.Point(196, 550);
-            this.panel1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panel1.Margin = new System.Windows.Forms.Padding(5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(443, 242);
             this.panel1.TabIndex = 6;
@@ -106,7 +106,7 @@
             // username_textBox
             // 
             this.username_textBox.Location = new System.Drawing.Point(84, 40);
-            this.username_textBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.username_textBox.Margin = new System.Windows.Forms.Padding(5);
             this.username_textBox.Mask = "000000000";
             this.username_textBox.Name = "username_textBox";
             this.username_textBox.Size = new System.Drawing.Size(274, 38);
@@ -159,7 +159,7 @@
             // 
             this.pictureBox1.Image = global::ZhannaBeauty.Properties.Resources.logo;
             this.pictureBox1.Location = new System.Drawing.Point(161, 21);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(509, 518);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -180,7 +180,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "UserLogin";

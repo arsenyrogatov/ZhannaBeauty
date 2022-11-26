@@ -42,7 +42,7 @@ namespace ZhannaBeauty
         {
             UpdateWorker();
             UpdateRecs();
-            UpdateServices();
+            
             UpdateMaterials();
             UpdateProcedures();
 
@@ -50,6 +50,7 @@ namespace ZhannaBeauty
             {
                 UpdateUsers();
                 UpdateWorkers();
+                UpdateServices();
             }
         }
 
@@ -65,6 +66,7 @@ namespace ZhannaBeauty
             {
                 tabControl.TabPages.Remove(Worker_tabPage);
                 tabControl.TabPages.Remove(Client_tabPage);
+                tabControl.TabPages.Remove(Service_tabPage);
             }
         }
 
@@ -116,16 +118,23 @@ namespace ZhannaBeauty
         {
             if (recs_dataGridView.Rows.Count > 0)
             {
-                currentRec.recDate = rec_dateTimePicker.Value;
-                currentRec.Status = recStatus_comboBox.Text;
-                currentRec.UpdateUserRec();
-                if (currentRec.Status == "Проведена")
+                if (recStatus_comboBox.Text == "Проведена" && rec_dateTimePicker.Value > DateTime.Now)
                 {
-                    currentRec.CreateProc(worker.Id);
+                    MessageBox.Show("Нельзя установить статус 'Проведена' для данной записи");
                 }
-                MessageBox.Show("Данные записи обновлены!");
-                UpdateRecs();
-                UpdateProcedures();
+                else
+                {
+                    currentRec.recDate = rec_dateTimePicker.Value;
+                    currentRec.Status = recStatus_comboBox.Text;
+                    currentRec.UpdateUserRec();
+                    if (currentRec.Status == "Проведена")
+                    {
+                        currentRec.CreateProc(worker.Id);
+                    }
+                    MessageBox.Show("Данные записи обновлены!");
+                    UpdateRecs();
+                    UpdateProcedures();
+                }
             }
         }
 
@@ -242,10 +251,11 @@ namespace ZhannaBeauty
 
         private void servSearch_textBox_TextChanged(object sender, EventArgs e)
         {
-            if (servSearch_textBox.Text != servTextHint)
-            {
-                ((DataTable)services_dataGridView.DataSource).DefaultView.RowFilter = $"[Услуга] LIKE '%{servSearch_textBox.Text}%'";
-            }
+                if (servSearch_textBox.Text != servTextHint)
+                {
+                    ((DataTable)services_dataGridView.DataSource).DefaultView.RowFilter = $"[Название] LIKE '%{servSearch_textBox.Text}%'";
+                }
+            
         }
 
         private void userFind_textBox_Leave(object sender, EventArgs e)
@@ -556,6 +566,36 @@ namespace ZhannaBeauty
             ((DataTable)proc_dataGridView.DataSource).DefaultView.RowFilter = $"[ФИО мастера] LIKE '%{worker.FIO}%'";
             else
                 ((DataTable)proc_dataGridView.DataSource).DefaultView.RowFilter = $"[ФИО мастера] LIKE '%'";
+        }
+
+        private void Rec_tabPage_Enter(object sender, EventArgs e)
+        {
+            UpdateRecs();
+        }
+
+        private void Proc_tabPage_Enter(object sender, EventArgs e)
+        {
+            UpdateProcedures();
+        }
+
+        private void Service_tabPage_Enter(object sender, EventArgs e)
+        {
+            UpdateServices();
+        }
+
+        private void Client_tabPage_Enter(object sender, EventArgs e)
+        {
+            UpdateUsers();
+        }
+
+        private void Worker_tabPage_Enter(object sender, EventArgs e)
+        {
+            UpdateWorkers();
+        }
+
+        private void Material_tabPage_Enter(object sender, EventArgs e)
+        {
+            UpdateMaterials();
         }
     }
 }
